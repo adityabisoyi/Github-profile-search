@@ -299,3 +299,162 @@ input:checked + .slider:before {
     background: #3f99ff;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================================== */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 758px) {
+    * {
+        box-sizing: border-box;
+    }
+    .screen {
+        height: 100%;
+        padding-bottom: 2em;
+        overflow: hidden;
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 1em 0.2em;
+    }
+    .search-bar {
+        width: 100%;
+        padding: 0.5em;
+        height: 3em;
+        border-radius: 10px;
+    }
+    .search-bar img {
+        width: 6%;
+        margin-right: 0.7em;
+    }
+    .search-bar input::placeholder {
+        font-size: 0.75rem;
+    }
+    .search-bar input{
+        font-size: 0.75rem;
+    }
+    .search-btn {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        border-radius: 6px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .dev-info {
+        flex-direction: column;
+        width: 100%;
+        padding: 0.2em;
+    }
+    .dev-info-left {
+        width: 100%;
+    }
+    .dev-info-left img {
+        width: 60%;
+    }
+    .dev-info-right {
+        width: 90%;
+        margin: 1em 0 1em 1em;
+    }
+    .dev-info-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .dev-name {
+        font-size: 1.5rem; 
+    }
+    .dev-join {
+        margin-top: 1em;
+        font-size: 0.8rem;
+    }
+    .dev-userid {
+        margin-top: 1em;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .dev-bio {
+        text-align: center;
+        margin-top: 1em;
+    }
+    .dev-stats {
+        padding: 1em;
+    }
+    .dev-stat-num {
+        font-size: 1.5rem;
+    }
+    .dev-details {
+        grid-template-columns: auto;
+        font-size: 0.8rem;
+        margin-left: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 310px) {
+    .dev-stats {
+        flex-direction: column;
+    }
+    .dev-stat-title {
+        text-align: center;
+        padding-top: 1.5em;
+    }
+}

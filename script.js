@@ -89,9 +89,15 @@ function updateData(data) {
 
     devBio.textContent = `${data.bio}`
 
-    devRepos.textContent =`${data.public_repos}`
-    devFollowing.textContent =`${data.following}`
-    devFollowers.textContent =`${data.followers}`
+    if (data.name === undefined) {
+        devRepos.textContent = 0
+        devFollowing.textContent = 0
+        devFollowers.textContent = 0
+    } else {
+        devRepos.textContent =`${data.public_repos}`
+        devFollowing.textContent =`${data.following}`
+        devFollowers.textContent =`${data.followers}`
+    }
     
     devLocation.textContent = `${data.location}`
     devWebsite.textContent = `${data.email}`
